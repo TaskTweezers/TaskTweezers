@@ -1,0 +1,65 @@
+  
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+@font-face {
+    font-family: emoji;
+    src: url(AppleColorEmoji-HD.ttc);
+  }
+
+
+:root {
+  --color-background-primary: #1a1a1a;
+  --color-background-secondary: #252525;
+  --color-text-primary: #fff;
+  --color-link-primary: #8f8f8f;
+  --color-link-secondary: #606060;
+  --color-brand-primary: rgb(61, 41, 163);
+  --color-brand-secondary: rgb(124, 93, 210);
+  --color-decorative-border-1: #4c4c4c;
+}
+
+body {
+  max-width: 1200px;
+}
+
+html {
+  display: flex;
+  justify-content: center;
+}
+
+html,
+body {
+  background-color: var(--color-background-primary);
+  color: var(--color-text-primary);
+  font-family: Inter, sans-serif;
+  font-size: 24px;
+}
+
+.emoji{
+    font-family: emoji;
+    font-size: 28px;
+    vertical-align: sub;
+    margin-inline: 3px;
+}
+
+.tasktweezers {
+  text-align: center;
+  all: unset;
+  cursor: pointer;
+  font-size: 4em;
+  font-weight: bold;
+  line-height: 1.2;
+  color: var(--color-text-primary);
+}
+.tasktweezers:active{
+  color: var(--color-text-primary);
+}
+
+a{
+    color: var(--color-brand-secondary);
+    transition: 250ms;
+}
+a:active{
+  color: var(--color-brand-primary);
+  cursor: pointer;
+}
